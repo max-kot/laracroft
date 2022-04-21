@@ -1,0 +1,38 @@
+.first {
+	background: url('../img/first/bg_first.png') center / cover no-repeat;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 25px;
+	}
+
+	&__text {
+		width: 60%;
+	}
+
+	&__title {
+		width: 600px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 48px;
+		background: #000;
+		text-align: center;
+		padding: 8px 0;
+		margin-bottom: 25px;
+	}
+
+	&__descr {
+		width: 500px;
+		background: rgba(0, 0, 0, 0.75);
+		padding: 25px 30px;
+		line-height: 20px;
+	}
+
+	&__image {
+		img{
+			width: 100%;
+		}
+	}
+}

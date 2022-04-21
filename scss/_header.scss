@@ -1,0 +1,50 @@
+.header {
+	background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+}
+.logo {
+	padding: 5px 0;
+	&__link {
+	}
+
+	&__img {
+	}
+}
+.menu {
+
+	&__list {
+		display: flex;
+		align-items: center;
+		li{
+			text-transform: uppercase;
+			padding: 0 18px;
+		}
+		li:last-child{
+			padding-right: 0;
+		}
+	}
+
+	&__btn {
+		background: #6B0505;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 15px 35px;
+		color: #fff;
+	}
+}
+.item {
+
+	&__link {
+	}
+}

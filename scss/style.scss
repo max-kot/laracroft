@@ -1,0 +1,9 @@
+/*=== Сборка стилей ===*/
+@import "normalize";
+@import "nullstyle";
+@import "fonts";
+@import "main";
+
+/*=== Стили разделов ===*/
+@import "_header";
+@import "_first";
