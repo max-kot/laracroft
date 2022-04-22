@@ -5,7 +5,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-top: 25px;
+		height: 100%;
+		padding-top: 70px;
 	}
 
 	&__text {
@@ -19,7 +20,7 @@
 		font-size: 48px;
 		background: #000;
 		text-align: center;
-		padding: 8px 0;
+		padding: 8px 15px;
 		margin-bottom: 25px;
 	}
 
@@ -31,8 +32,52 @@
 	}
 
 	&__image {
+		width: 40%;
 		img{
 			width: 100%;
+		}
+	}
+}
+@media (max-width: 870px) {
+	.first{
+		&__text{
+			width: 80%;
+		}
+		&__title{
+			width: 100%
+		}
+	}
+}
+@media (max-width: 768px) {
+	.first{
+		
+		&__body{
+			width: 100%;
+			position: relative;
+			padding-top: 280px;
+			padding-bottom: 10px;
+		}
+		&__text{
+			z-index: 2;
+			width: 100%;
+		}
+		&__title{
+			width: 100%;
+			margin-bottom: 0;
+			font-size: 38px;
+			padding: 15px;
+		}
+		&__descr{
+			width: 100%;
+			text-align: center;
+			padding: 15px;
+		}
+		&__image{
+			position: absolute;
+			top: 0;
+			transform: translateX(50%);
+			right: 50%;
+			width: 250px;
 		}
 	}
 }
