@@ -510,6 +510,7 @@ input[type=search]::-webkit-search-results-decoration {
   background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
   position: fixed;
   width: 100%;
+  z-index: 42;
 }
 .header__body {
   display: flex;
@@ -706,7 +707,7 @@ input[type=search]::-webkit-search-results-decoration {
     width: 100%;
     position: relative;
     padding-top: 280px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
   }
   .first__text {
     z-index: 2;
@@ -730,4 +731,92 @@ input[type=search]::-webkit-search-results-decoration {
     right: 50%;
     width: 250px;
   }
+}
+.about {
+  background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
+}
+.about__body {
+  padding-top: 46px;
+  padding-bottom: 71px;
+}
+@media (max-width: 768px) {
+  .about__body {
+    padding: 25px 0;
+  }
+}
+.about__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .about__title {
+    margin-bottom: 25px;
+    font-size: 38px;
+  }
+}
+.about__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -24px;
+}
+@media (max-width: 1024px) {
+  .about__list {
+    margin: 0 -12px;
+  }
+}
+@media (max-width: 768px) {
+  .about__list {
+    display: block;
+  }
+}
+.about__item {
+  flex: 0 1 33.333%;
+  display: flex;
+  padding: 0 24px;
+  min-height: 100%;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+.about__item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .about__item {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 768px) {
+  .about__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.about__image img {
+  width: 100%;
+}
+.about__descr {
+  background: rgba(0, 0, 0, 0.67);
+  padding: 25px;
+  line-height: 1.2;
+  height: 100%;
+  flex: 1 1 auto;
+}
+.about__btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #6B0505;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+}
+.about__btn:hover {
+  color: #6B0505;
+  background: #fff;
+  transition: background 0.3s ease-in-out;
 }

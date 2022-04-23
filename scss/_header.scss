@@ -2,6 +2,7 @@
 	background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
 	position: fixed;
 	width: 100%;
+	z-index: 42; 
 	&__body {
 		display: flex;
 		justify-content: space-between;
