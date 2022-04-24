@@ -567,10 +567,6 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 @media (max-width: 768px) {
-  .header {
-    position: relative;
-  }
-
   .menu__list {
     margin-top: 50px;
     position: absolute;
@@ -706,7 +702,7 @@ input[type=search]::-webkit-search-results-decoration {
   .first__body {
     width: 100%;
     position: relative;
-    padding-top: 280px;
+    padding-top: 380px;
     padding-bottom: 25px;
   }
   .first__text {
@@ -726,7 +722,7 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .first__image {
     position: absolute;
-    top: 0;
+    top: 75px;
     transform: translateX(50%);
     right: 50%;
     width: 250px;
@@ -819,4 +815,97 @@ input[type=search]::-webkit-search-results-decoration {
   color: #6B0505;
   background: #fff;
   transition: background 0.3s ease-in-out;
+}
+
+.form {
+  background: url("../img/form/bg_form.png") top/cover no-repeat;
+}
+.form__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.form__content {
+  background: rgba(3, 3, 3, 0.7);
+  width: 45%;
+  padding: 60px 80px;
+}
+@media (max-width: 1024px) {
+  .form__content {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .form__content {
+    width: 100%;
+    padding: 25px;
+  }
+}
+.form__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .form__title {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+}
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  display: block;
+  padding: 15px 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #1B2115;
+  margin-bottom: 35px;
+  color: #3D3D3D;
+}
+.form__input:focus {
+  box-shadow: 0px 0px 20px 1px rgb(134, 143, 142);
+}
+@media (max-width: 768px) {
+  .form__input {
+    margin-bottom: 15px;
+  }
+}
+.form__textarea {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #1B2115;
+  padding: 15px 22px;
+  color: #3D3D3D;
+  height: 150px;
+  margin-bottom: 35px;
+}
+.form__textarea:focus {
+  box-shadow: 0px 0px 20px 1px rgb(134, 143, 142);
+}
+@media (max-width: 7684px) {
+  .form__textarea {
+    margin-bottom: 25px;
+  }
+}
+.form__btn {
+  display: block;
+  background: #000;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 15px;
+  text-transform: uppercase;
+  width: 250px;
+  transition: background 0.3s ease-in-out;
+}
+.form__btn:hover {
+  background: #6B0505;
+  transition: background 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .form__btn {
+    width: 100%;
+  }
 }
