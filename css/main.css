@@ -52,3 +52,7 @@ input[type=search]::-webkit-search-results-decoration {
 .red-text {
   color: #6B0505;
 }
+
+.text-none {
+  display: none;
+}

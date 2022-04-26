@@ -505,12 +505,17 @@ input[type=search]::-webkit-search-results-decoration {
   color: #6B0505;
 }
 
+.text-none {
+  display: none;
+}
+
 /*=== Стили разделов ===*/
 .header {
   background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
   position: fixed;
   width: 100%;
   z-index: 42;
+  border-bottom: 1px solid #000;
 }
 .header__body {
   display: flex;
@@ -908,4 +913,122 @@ input[type=search]::-webkit-search-results-decoration {
   .form__btn {
     width: 100%;
   }
+}
+
+.footer {
+  background: linear-gradient(180deg, #000000 0%, #1B2115 100%);
+  padding: 35px 0;
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer__body {
+    flex-direction: column;
+  }
+}
+.footer__email {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  transition: color 0.3s ease-in-out;
+}
+.footer__email:hover {
+  transition: color 0.3s ease-in-out;
+  color: #6b0505;
+}
+.footer__copy {
+  font-size: 14px;
+}
+.social {
+  display: flex;
+  margin: 0 -6px;
+  margin-bottom: 36px;
+}
+.social__item {
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+.social__item:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.tw-logo {
+  display: block;
+  background: url("../img/footer/tw.svg") center/cover no-repeat;
+  width: 25px;
+  height: 21px;
+}
+
+.fb-logo {
+  display: block;
+  background: url("../img/footer/fb.svg") center/cover no-repeat;
+  width: 13px;
+  height: 25px;
+}
+
+.inst-logo {
+  display: block;
+  background: url("../img/footer/inst.svg") center/cover no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.in-logo {
+  display: block;
+  background: url("../img/footer/in.svg") center/cover no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author__item {
+  background: #fff;
+  padding: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+.author__item:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.author__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .author__item:first-child {
+    margin-top: 20px;
+  }
+}
+.author__link {
+  color: #000;
+  font-weight: 700;
+  display: block;
+}
+
+.square-logo {
+  display: block;
+  background: url("../img/footer/square_enix.svg") center/cover no-repeat;
+  width: 200px;
+  height: 20px;
+}
+
+.crystal-logo {
+  display: block;
+  background: url("../img/footer/cristal-dinamics.svg") center/cover no-repeat;
+  width: 90px;
+  height: 27px;
 }
